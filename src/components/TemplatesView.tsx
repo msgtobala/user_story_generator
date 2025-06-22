@@ -1,5 +1,5 @@
 import React, { useState, useMemo } from 'react';
-import { Plus, AlertCircle, Loader, FileText, Search, Filter, Grid, List, Star, Clock, Users, ChevronDown, ArrowUpDown } from 'lucide-react';
+import { Plus, AlertCircle, Loader, FileText, Search, Filter, Grid, List, Star, Clock, Users, ChevronDown, ArrowUpDown, Sparkles } from 'lucide-react';
 import { useTemplates } from '../hooks/useTemplates';
 import { FilterOptions, UserStoryTemplate } from '../types';
 import { createTemplate, updateTemplate, deleteTemplate } from '../services/userStories';
@@ -163,6 +163,16 @@ export const TemplatesView: React.FC = () => {
                     <Plus className="h-4 w-4" />
                     <span className="hidden sm:inline">New</span>
                   </div>
+                </button>
+                <button
+                  type="button"
+                  disabled={true}
+                  className="flex items-center space-x-2 px-4 py-2 bg-gradient-to-r from-purple-600 to-blue-600 dark:from-purple-500 dark:to-blue-500 text-white rounded-md hover:from-purple-700 hover:to-blue-700 dark:hover:from-purple-600 dark:hover:to-blue-600 disabled:opacity-50 disabled:cursor-not-allowed transition-all duration-200 font-medium text-sm shadow-sm self-start sm:self-auto"
+                >
+                  <>
+                    <Sparkles className="h-4 w-4" />
+                    <span>Generate with AI</span>
+                  </>
                 </button>
               </div>
             </div>

@@ -336,11 +336,11 @@ Then an error message should be displayed"
               <p className="text-xs text-gray-500 dark:text-gray-400">
                 Enter each acceptance criteria on a new line. They will be automatically formatted when saved.
               </p>
-              {formData.description.trim() && (
+              {/* {formData.description.trim() && (
                 <p className="text-xs text-purple-600 dark:text-purple-400 font-medium">
                   💡 Try the AI generator to auto-create criteria based on your description
                 </p>
-              )}
+              )} */}
             </div>
           </div>
 
