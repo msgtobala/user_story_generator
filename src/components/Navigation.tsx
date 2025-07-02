@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { FileText, Layers, Menu, X } from 'lucide-react';
+import { FileText, Menu, X, Lightbulb, Layers } from 'lucide-react';
 import { ThemeToggle } from './ThemeToggle';
 
 interface NavigationProps {
@@ -18,7 +18,7 @@ export const Navigation: React.FC<NavigationProps> = ({ activeTab, onTabChange }
           <div className="flex justify-between items-center h-14">
             <div className="flex items-center space-x-3">
               <div className="w-8 h-8 bg-gradient-to-br from-blue-600 to-indigo-600 dark:from-blue-500 dark:to-indigo-500 rounded-md flex items-center justify-center shadow-sm">
-                <Layers className="h-5 w-5 text-white" />
+                <Lightbulb className="h-5 w-5 text-white" />
               </div>
               <div className="hidden sm:block">
                 <h1 className="text-lg font-semibold text-gray-900 dark:text-white transition-colors duration-300">
